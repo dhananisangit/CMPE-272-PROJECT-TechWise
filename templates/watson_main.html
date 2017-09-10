@@ -29,7 +29,7 @@
   });
 };
 
- var jsonData=getJSON('https://access.alchemyapi.com/calls/data/GetNews?apikey=23c31ddddd5b9d38a1b019714385c147b2b7a072&return=enriched.url.title,enriched.url.url&q.enriched.url.title=[workshop^seminar]&q.enriched.url.enrichedTitle.taxonomy.taxonomy_.label=technology%20and%20computing&count=10&outputMode=json&start=now-12h&end=now&q.enriched.url.docSentiment.type=positive').then(function(data) {
+ var jsonData=getJSON('https://access.alchemyapi.com/calls/data/GetNews?apikey=<api key>&return=enriched.url.title,enriched.url.url&q.enriched.url.title=[workshop^seminar]&q.enriched.url.enrichedTitle.taxonomy.taxonomy_.label=technology%20and%20computing&count=10&outputMode=json&start=now-12h&end=now&q.enriched.url.docSentiment.type=positive').then(function(data) {
 
 
     for(var i=0; i<data.result.docs.length; i++)
